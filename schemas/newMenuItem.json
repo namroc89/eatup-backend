@@ -1,0 +1,77 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "id": 1,
+            "description": "this is a description",
+            "restaurant_id": 2,
+            "username": "username",
+            "menu_id": 1
+        }
+    ],
+    "required": [
+        "id",
+        "description",
+        "restaurant_id",
+        "username",
+        "menu_id"
+    ],
+    "properties": {
+        "id": {
+            "$id": "#/properties/id",
+            "type": "integer",
+            "title": "The id schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "description": {
+            "$id": "#/properties/description",
+            "type": "string",
+            "title": "The description schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "this is a description"
+            ]
+        },
+        "restaurant_id": {
+            "$id": "#/properties/restaurant_id",
+            "type": "integer",
+            "title": "The restaurant_id schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                2
+            ]
+        },
+        "username": {
+            "$id": "#/properties/username",
+            "type": "string",
+            "title": "The username schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "username"
+            ]
+        },
+        "menu_id": {
+            "$id": "#/properties/menu_id",
+            "type": "integer",
+            "title": "The menu_id schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        }
+    },
+    "additionalProperties": true
+}
